@@ -65,7 +65,7 @@ namespace TestCalc
         public void TestMethod_DivideZero_Exeption()
         {
             #region Arrange
-            int a = 5; int b = 0;int c;
+            int a = 5; int b = 0;
             #endregion
             #region Action
             Controller.Division(a, b);
