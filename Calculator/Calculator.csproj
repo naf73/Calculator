@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControllerParse.cs" />
     <Compile Include="eOperation.cs" />
     <Compile Include="Controller.cs" />
     <Compile Include="FormMain.cs">
