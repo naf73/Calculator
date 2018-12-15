@@ -45,7 +45,7 @@ namespace Calculator
 
         private void button_point_Click(object sender, EventArgs e)
         {
-            Screen.AppendText(" " + (sender as Button).Text);
+            Screen.AppendText((sender as Button).Text);
         }
 
         private void button_open_bracket_Click(object sender, EventArgs e)
