@@ -8,7 +8,7 @@ namespace Calculator
 {
     public static partial class Controller
     {
-        /// <summary>
+       /* /// <summary>
         /// Сложение 
         /// </summary>
         /// <param name="a"></param>
@@ -58,16 +58,17 @@ namespace Calculator
         /// <returns></returns>
         public static double  Division(double a, double b)
         {
-            /*if (b == 0)
-            {
-                throw new Exception("на ноль делить нельзя");
-            }*/
+            ///if (b == 0)
+           /// {
+             ///   throw new Exception("на ноль делить нельзя");
+            ///}
             if (a <= 0 && b <= 0 || b == 0)
             {
                 throw new Exception("куку Ёпта");
             }
             return (a / b);
-        }
+        }*/
+
 
         public static string Calc(List<double> n, List<eOperation> o)  
         {
