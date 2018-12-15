@@ -8,6 +8,13 @@ namespace Calculator
 {
     public static partial class ControllerParse
     {
+        /// <summary>
+        /// Парсер строки
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="n"></param>
+        /// <param name="o"></param>
+        /// <returns></returns>
         public static bool Parse(string s,out List<double> n,out List<eOperation> o)
         {
             bool res = false;
