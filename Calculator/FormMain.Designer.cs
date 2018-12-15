@@ -187,6 +187,7 @@
             this.button_Plus.TabIndex = 13;
             this.button_Plus.Text = "+";
             this.button_Plus.UseVisualStyleBackColor = true;
+            this.button_Plus.Click += new System.EventHandler(this.button_Plus_Click);
             // 
             // button_Minus
             // 
@@ -245,6 +246,7 @@
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

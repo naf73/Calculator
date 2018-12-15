@@ -16,5 +16,15 @@ namespace Calculator
         {
             InitializeComponent();
         }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_Plus_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
