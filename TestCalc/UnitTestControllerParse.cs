@@ -24,11 +24,25 @@ namespace TestCalc
 
             #region Action
 
-            
+            ControllerParse.Parse(expression, out numberExpect,out operationsExpect);
 
             #endregion
 
             #region Assert
+
+            Assert.AreEqual(numberExpect.Count, numbersActual.Count);
+
+            for (int i = 0; i < numberExpect.Count; i++)
+            {
+                Assert.AreEqual(numberExpect[i], numbersActual[i]);
+            }
+
+            Assert.AreEqual(operationsExpect.Count, operationsActual.Count);
+
+            for (int i = 0; i < operationsExpect.Count; i++)
+            {
+                Assert.AreEqual(operationsExpect[i], operationsActual[i]);
+            }
 
             #endregion
         }
