@@ -36,7 +36,30 @@ namespace Calculator
 
         #region Events
 
-        
+        private void button_change_sign_Click(object sender, EventArgs e)
+        {
+           
+           // if(a >= 0)
+           // {
+           //    Screen.AppendText("-" + a);
+           // }
+        }
+
+        private void button_point_Click(object sender, EventArgs e)
+        {
+            Screen.AppendText((sender as Button).Text + " ");
+        }
+
+        private void button_open_bracket_Click(object sender, EventArgs e)
+        {
+            Screen.AppendText((sender as Button).Text + " ");
+        }
+
+        private void button_close_bracket_Click(object sender, EventArgs e)
+        {
+            Screen.AppendText((sender as Button).Text + " ");
+        }
+
         private void Number_Click(object sender, EventArgs e)
         {
             Screen.AppendText((sender as Button).Text);
@@ -50,26 +73,22 @@ namespace Calculator
 
         private void Button_Plus_Click(object sender, EventArgs e)
         {
-            operation = eOperation.addition;
-            SetValueA();
+            Screen.AppendText((sender as Button).Text + " ");
         }
 
         private void Button_Minus_Click(object sender, EventArgs e)
         {
-            operation = eOperation.subtraction;
-            SetValueA();
+            Screen.AppendText((sender as Button).Text + " ");
         }
 
         private void Button_Multi_Click(object sender, EventArgs e)
         {
-            operation = eOperation.multiplication;
-            SetValueA();
+            Screen.AppendText((sender as Button).Text + " ");
         }
 
         private void Button_Divide_Click(object sender, EventArgs e)
         {
-            operation = eOperation.division;
-            SetValueA();
+            Screen.AppendText((sender as Button).Text + " ");
         }
 
         private void Result_Click(object sender, EventArgs e)
@@ -78,37 +97,7 @@ namespace Calculator
             {
                 MessageBox.Show("Введите число и выберите операцию");
                 return;
-            }
-
-            b = Convert.ToInt32(Screen.Text);
-            switch (operation)
-            {
-                case eOperation.empty:
-                    MessageBox.Show("Выберите операцию и введите второе число");
-                    break;
-                case eOperation.addition:
-                    Screen.Text = Controller.Addition(a, b);
-                    break;
-                case eOperation.subtraction:
-                    Screen.Text = Controller.Substraction(a, b);
-                    break;
-                case eOperation.multiplication:
-                    Screen.Text = Controller.Multiplication(a, b);
-                    break;
-                case eOperation.division:
-                    try
-                    {
-                        Screen.Text = Controller.Division(a, b);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                    break;
-                default:
-                    MessageBox.Show("Ошибка операции");
-                    break;
-            }
+            }            
         }
 
         #endregion
@@ -126,11 +115,11 @@ namespace Calculator
             Screen.Text = string.Empty;
         }
 
+
+
+
         #endregion
 
-        private void FormMain_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }
