@@ -40,8 +40,7 @@ namespace Calculator
 
         private void button_change_sign_Click(object sender, EventArgs e)
         {
-          //  lastSign = "-"
-           // if (lastSign == ) Screen.AppendText("-");
+
         }
 
         private void button_point_Click(object sender, EventArgs e)
@@ -63,7 +62,7 @@ namespace Calculator
         {
           //  int x = Screen.ToInt32((sender as Button).Text);
           //  lastSign = x;
-           // Screen.AppendText((sender as Button).Text);
+            Screen.AppendText((sender as Button).Text);
         }
 
         private void Cancel_Click(object sender, EventArgs e)
@@ -94,11 +93,15 @@ namespace Calculator
 
         private void Result_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(Screen.Text))
+            if (string.IsNullOrEmpty(Screen.Text))
             {
                 MessageBox.Show("Введите число и выберите операцию");
                 return;
-            }            
+            }
+            List<double> n = new List<double>();
+            List<eOperation> o = new List<eOperation>();
+            ControllerParse.Parse(Screen.Text, out n, out o);
+            Screen.Text = Controller.Calc(n, o);
         }
 
         #endregion
