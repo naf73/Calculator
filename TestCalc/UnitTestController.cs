@@ -20,7 +20,6 @@ namespace TestCalc
 
             #region Action
 
-            Controller.Addition(a, b);
             c = Controller.Addition(a, b);
 
             #endregion

@@ -68,11 +68,46 @@ namespace Calculator
             }
             return (a / b);
         }
+
         public static string Calc(List<double> n, List<eOperation> o)  
         {
-            
+            double result = 0;
 
-            return string.Empty;
+            double[] numbers = n.ToArray();
+            eOperation[] oper = o.ToArray();
+
+
+            for (int i = 0; i < n.Count; i++)
+            {
+                if(i==0)
+                {
+                    result += numbers[i];
+                }
+                else
+                {
+                    switch (oper[i])
+                    {
+                        case eOperation.empty:
+                            break;
+                        case eOperation.addition:
+                            result += numbers[i];
+                            break;
+                        case eOperation.subtraction:
+                            result -= numbers[i];
+                            break;
+                        case eOperation.multiplication:
+                            result *= numbers[i];
+                            break;
+                        case eOperation.division:
+                            result /= numbers[i];
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+
+            return result.ToString();
         }
 
     }
