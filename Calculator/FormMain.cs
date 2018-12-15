@@ -76,7 +76,7 @@ namespace Calculator
         {
             if(string.IsNullOrEmpty(Screen.Text))
             {
-                MessageBox.Show("Введите второе число");
+                MessageBox.Show("Введите число и выберите операцию");
                 return;
             }
 
@@ -117,6 +117,11 @@ namespace Calculator
 
         private void SetValueA()
         {
+            if (string.IsNullOrWhiteSpace(Screen.Text))
+            {
+                MessageBox.Show("Сначала необходимо ввести первое число");
+                return;
+            }
             a = Convert.ToInt32(Screen.Text);
             Screen.Text = string.Empty;
         }
