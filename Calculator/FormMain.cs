@@ -60,8 +60,6 @@ namespace Calculator
 
         private void Number_Click(object sender, EventArgs e)
         {
-          //  int x = Screen.ToInt32((sender as Button).Text);
-          //  lastSign = x;
             Screen.AppendText((sender as Button).Text);
         }
 
