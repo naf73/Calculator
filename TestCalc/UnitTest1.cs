@@ -1,35 +1,37 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Calculator;
 
 namespace TestCalc
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTestCalc
     {
         [TestMethod]
-        public void TestMethodSum()
+        public void TestMethodAddition()
         {
             #region Arrange
-            int a = 1; int b = 2; int Sum;
+            int a = 1; int b = 2; int c;
             #endregion
             #region Action
-            
+            Controller.Addition(a, b);
+            int.TryParse(Controller.Addition(a,b),out c);
             #endregion
             #region Assert
-            Assert.AreEqual(3,3);
+            Assert.AreEqual(c ,3);
             #endregion
         }
         [TestMethod]
-        public void TestMethodMinus()
+        public void TestMethodSubstraction()
         {
             #region Arrange
-
+            int a = 5; int b = 6;
             #endregion
             #region Action
-
+            Controller.Substraction(a, b);
             #endregion
             #region Assert
-
+            Assert.AreEqual(-1, -1); 
             #endregion
         }
         [TestMethod]
