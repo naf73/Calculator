@@ -18,6 +18,8 @@ namespace Calculator
 
         int b;
 
+        string lastSign;
+
         eOperation operation;
 
         #endregion
@@ -38,31 +40,30 @@ namespace Calculator
 
         private void button_change_sign_Click(object sender, EventArgs e)
         {
-           
-           // if(a >= 0)
-           // {
-           //    Screen.AppendText("-" + a);
-           // }
+          //  lastSign = "-"
+           // if (lastSign == ) Screen.AppendText("-");
         }
 
         private void button_point_Click(object sender, EventArgs e)
         {
-            Screen.AppendText((sender as Button).Text + " ");
+            Screen.AppendText(" " + (sender as Button).Text);
         }
 
         private void button_open_bracket_Click(object sender, EventArgs e)
         {
-            Screen.AppendText((sender as Button).Text + " ");
+            Screen.AppendText(" " + (sender as Button).Text);
         }
 
         private void button_close_bracket_Click(object sender, EventArgs e)
         {
-            Screen.AppendText((sender as Button).Text + " ");
+            Screen.AppendText(" " + (sender as Button).Text);
         }
 
         private void Number_Click(object sender, EventArgs e)
         {
-            Screen.AppendText((sender as Button).Text);
+          //  int x = Screen.ToInt32((sender as Button).Text);
+          //  lastSign = x;
+           // Screen.AppendText((sender as Button).Text);
         }
 
         private void Cancel_Click(object sender, EventArgs e)
@@ -73,22 +74,22 @@ namespace Calculator
 
         private void Button_Plus_Click(object sender, EventArgs e)
         {
-            Screen.AppendText((sender as Button).Text + " ");
+            Screen.AppendText(" " + (sender as Button).Text + " ");
         }
 
         private void Button_Minus_Click(object sender, EventArgs e)
         {
-            Screen.AppendText((sender as Button).Text + " ");
+            Screen.AppendText(" " + (sender as Button).Text + " ");
         }
 
         private void Button_Multi_Click(object sender, EventArgs e)
         {
-            Screen.AppendText((sender as Button).Text + " ");
+            Screen.AppendText(" " + (sender as Button).Text + " ");
         }
 
         private void Button_Divide_Click(object sender, EventArgs e)
         {
-            Screen.AppendText((sender as Button).Text + " ");
+            Screen.AppendText(" " + (sender as Button).Text + " ");
         }
 
         private void Result_Click(object sender, EventArgs e)
