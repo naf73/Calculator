@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Screen = new System.Windows.Forms.TextBox();
             this.button_1 = new System.Windows.Forms.Button();
             this.button_2 = new System.Windows.Forms.Button();
             this.button_3 = new System.Windows.Forms.Button();
@@ -47,16 +47,16 @@
             this.button_Divide = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // Screen
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Screen.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(229, 53);
-            this.textBox1.TabIndex = 0;
+            this.Screen.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Screen.Location = new System.Drawing.Point(12, 12);
+            this.Screen.Name = "Screen";
+            this.Screen.ReadOnly = true;
+            this.Screen.Size = new System.Drawing.Size(229, 53);
+            this.Screen.TabIndex = 0;
             // 
             // button_1
             // 
@@ -239,7 +239,7 @@
             this.Controls.Add(this.button_3);
             this.Controls.Add(this.button_2);
             this.Controls.Add(this.button_1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Screen);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FormMain";
@@ -252,7 +252,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Screen;
         private System.Windows.Forms.Button button_1;
         private System.Windows.Forms.Button button_2;
         private System.Windows.Forms.Button button_3;
