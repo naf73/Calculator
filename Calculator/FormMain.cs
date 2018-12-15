@@ -96,7 +96,14 @@ namespace Calculator
                     Screen.Text = Controller.Multiplication(a, b);
                     break;
                 case eOperation.division:
-                    Screen.Text = Controller.Division(a, b);
+                    try
+                    {
+                        Screen.Text = Controller.Division(a, b);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                     break;
                 default:
                     MessageBox.Show("Ошибка операции");
@@ -115,5 +122,10 @@ namespace Calculator
         }
 
         #endregion
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
