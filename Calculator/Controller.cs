@@ -16,8 +16,8 @@ namespace Calculator
         /// <returns></returns>
         public static string Addition(int a, int b)
         {
-            if (a<=0&&b<=0)
-            {
+            if (a <= 0 && b <= 0)
+            { 
                 throw new Exception("куку Ёпта");
             }
             return (a + b).ToString();
@@ -58,11 +58,11 @@ namespace Calculator
         /// <returns></returns>
         public static string Division(int a, int b)
         {
-            if (b == 0)
+            /*if (b == 0)
             {
                 throw new Exception("на ноль делить нельзя");
-            }
-            if (a <= 0 && b <= 0)
+            }*/
+            if (a <= 0 && b <= 0 || b == 0)
             {
                 throw new Exception("куку Ёпта");
             }
