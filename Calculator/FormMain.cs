@@ -16,5 +16,10 @@ namespace Calculator
         {
             InitializeComponent();
         }
+
+        private void Number_Click(object sender, EventArgs e)
+        {
+            Screen.AppendText((sender as Button).Text);
+        }
     }
 }
