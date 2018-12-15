@@ -72,6 +72,34 @@ namespace Calculator
             SetValueA();
         }
 
+        private void Result_Click(object sender, EventArgs e)
+        {
+            if(string.IsNullOrEmpty(Screen.Text))
+            {
+                MessageBox.Show("Введите второе число");
+                return;
+            }
+
+            b = Convert.ToInt32(Screen.Text);
+            switch (operation)
+            {
+                case eOperation.empty:
+                    MessageBox.Show("Выберите операцию и введите второе число");
+                    break;
+                case eOperation.addition:
+                    break;
+                case eOperation.subtraction:
+                    break;
+                case eOperation.multiplication:
+                    break;
+                case eOperation.division:
+                    break;
+                default:
+                    MessageBox.Show("Ошибка операции");
+                    break;
+            }
+        }
+
         #endregion
 
         #region Methods

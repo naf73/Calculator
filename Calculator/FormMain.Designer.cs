@@ -188,6 +188,7 @@
             this.button_Result.TabIndex = 12;
             this.button_Result.Text = "=";
             this.button_Result.UseVisualStyleBackColor = true;
+            this.button_Result.Click += new System.EventHandler(this.Result_Click);
             // 
             // button_Plus
             // 
