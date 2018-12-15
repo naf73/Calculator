@@ -82,11 +82,11 @@ namespace Calculator
             {
                 if(i==0)
                 {
-                    result += numbers[i];
+                    result  += numbers[i];
                 }
                 else
                 {
-                    switch (oper[i])
+                    switch (oper[i-1])
                     {
                         case eOperation.empty:
                             break;
