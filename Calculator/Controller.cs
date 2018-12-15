@@ -13,22 +13,25 @@ namespace Calculator
 
             return (a + b).ToString();
         }
+
         public static string Substraction(int a, int b)
         {
             return (a - b).ToString();
         }
+
         public static string Multiplication(int a, int b)
         {
             return (a * b).ToString();
         }
+
         public static string Division(int a, int b)
         {
-            if (b==0)
+            if (b == 0)
             {
                 throw new Exception("на ноль делить нельзя");
             }
             return (a / b).ToString();
-                
+        }       
 
     }
 
