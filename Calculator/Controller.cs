@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    public static class Controller
+    public static partial class Controller
     {
         /// <summary>
         /// Сложение 
@@ -14,13 +14,13 @@ namespace Calculator
         /// <param name="a"></param>
         /// <param name="b"></param>
         /// <returns></returns>
-        public static string Addition(int a, int b)
+        public static double Addition(double a, double b)
         {
             if (a <= 0 && b <= 0)
             { 
                 throw new Exception("куку Ёпта");
             }
-            return (a + b).ToString();
+            return (a + b);
         }
         /// <summary>
         /// Вычитание
@@ -28,13 +28,13 @@ namespace Calculator
         /// <param name="a"></param>
         /// <param name="b"></param>
         /// <returns></returns>
-        public static string Substraction(int a, int b)
+        public static double Substraction(double a, double b)
         {
             if (a <= 0 && b <= 0)
             {
                 throw new Exception("куку Ёпта");
             }
-            return (a - b).ToString();
+            return (a - b);
         }
         /// <summary>
         /// Умножение
@@ -42,13 +42,13 @@ namespace Calculator
         /// <param name="a"></param>
         /// <param name="b"></param>
         /// <returns></returns>
-        public static string Multiplication(int a, int b)
+        public static double Multiplication(double a, double b)
         {
             if (a <= 0 && b <= 0)
             {
                 throw new Exception("куку Ёпта");
             }
-            return (a * b).ToString();
+            return (a * b);
         }
         /// <summary>
         /// Деление
@@ -56,7 +56,7 @@ namespace Calculator
         /// <param name="a"></param>
         /// <param name="b"></param>
         /// <returns></returns>
-        public static string Division(int a, int b)
+        public static double  Division(double a, double b)
         {
             /*if (b == 0)
             {
@@ -66,10 +66,17 @@ namespace Calculator
             {
                 throw new Exception("куку Ёпта");
             }
-            return (a / b).ToString();
-        }       
+            return (a / b);
+        }
+        public static string Calc(List<double> n, List<eOperation> o)  
+        {
+            
+
+            return string.Empty;
+        }
 
     }
+     
 
 }         
             
