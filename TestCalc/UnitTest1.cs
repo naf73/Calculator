@@ -25,39 +25,39 @@ namespace TestCalc
         public void TestMethodSubstraction()
         {
             #region Arrange
-            int a = 5; int b = 6;
+            int a = 5; int b = 6;int c;
             #endregion
             #region Action
-            Controller.Substraction(a, b);
+            int.TryParse(Controller.Substraction(a, b),out c);
             #endregion
             #region Assert
-            Assert.AreEqual(-1, -1); 
+            Assert.AreEqual(c, -1); 
             #endregion
         }
         [TestMethod]
         public void TestMethodDivide()
         {
             #region Arrange
-
+            int a = 25; int b = 5; int c;
             #endregion
             #region Action
-
+            int.TryParse(Controller.Division(a, b), out c);
             #endregion
             #region Assert
-
+            Assert.AreEqual(c, 5);
             #endregion
         }
         [TestMethod]
         public void TestMethodMulti()
         {
             #region Arrange
-
+            int a = 4; int b = 7; int c;
             #endregion
             #region Action
-
+            int.TryParse(Controller.Multiplication(a, b), out c);
             #endregion
             #region Assert
-
+            Assert.AreEqual(c, 28);
             #endregion
         }
 
