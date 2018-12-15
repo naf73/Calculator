@@ -6,27 +6,32 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    class Controller
+    public static class Controller
     {
         public static string Addition(int a, int b)
         {
 
-            return string.Empty;
+            return (a + b).ToString();
         }
         public static string Substraction(int a, int b)
         {
-            return string.Empty;
+            return (a - b).ToString();
         }
         public static string Multiplication(int a, int b)
         {
-            return string.Empty;
+            return (a * b).ToString();
         }
         public static string Division(int a, int b)
         {
-            return string.Empty;
-        }
+            if (b==0)
+            {
+                throw new Exception("на ноль делить нельзя");
+            }
+            return (a / b).ToString();
+                
 
     }
+
 }         
             
        
