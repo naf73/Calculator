@@ -263,6 +263,7 @@
             this.button_change_sign.TabIndex = 17;
             this.button_change_sign.Text = "- /+";
             this.button_change_sign.UseVisualStyleBackColor = true;
+            this.button_change_sign.Click += new System.EventHandler(this.button_change_sign_Click);
             // 
             // button_point
             // 
@@ -272,6 +273,7 @@
             this.button_point.TabIndex = 18;
             this.button_point.Text = ".";
             this.button_point.UseVisualStyleBackColor = true;
+            this.button_point.Click += new System.EventHandler(this.button_point_Click);
             // 
             // button_open_bracket
             // 
@@ -281,6 +283,7 @@
             this.button_open_bracket.TabIndex = 19;
             this.button_open_bracket.Text = "(";
             this.button_open_bracket.UseVisualStyleBackColor = true;
+            this.button_open_bracket.Click += new System.EventHandler(this.button_open_bracket_Click);
             // 
             // button_close_bracket
             // 
@@ -290,6 +293,7 @@
             this.button_close_bracket.TabIndex = 20;
             this.button_close_bracket.Text = ")";
             this.button_close_bracket.UseVisualStyleBackColor = true;
+            this.button_close_bracket.Click += new System.EventHandler(this.button_close_bracket_Click);
             // 
             // FormMain
             // 
@@ -323,7 +327,6 @@
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
-            this.Load += new System.EventHandler(this.FormMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
