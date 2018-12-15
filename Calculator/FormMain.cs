@@ -87,12 +87,16 @@ namespace Calculator
                     MessageBox.Show("Выберите операцию и введите второе число");
                     break;
                 case eOperation.addition:
+                    Screen.Text = Controller.Addition(a, b);
                     break;
                 case eOperation.subtraction:
+                    Screen.Text = Controller.Substraction(a, b);
                     break;
                 case eOperation.multiplication:
+                    Screen.Text = Controller.Multiplication(a, b);
                     break;
                 case eOperation.division:
+                    Screen.Text = Controller.Division(a, b);
                     break;
                 default:
                     MessageBox.Show("Ошибка операции");
