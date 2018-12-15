@@ -21,5 +21,10 @@ namespace Calculator
         {
             Screen.AppendText((sender as Button).Text);
         }
+
+        private void Cancel_Click(object sender, EventArgs e)
+        {
+            Screen.Text = string.Empty;
+        }
     }
 }

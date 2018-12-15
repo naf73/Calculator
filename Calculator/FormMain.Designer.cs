@@ -177,6 +177,7 @@
             this.button_C.TabIndex = 11;
             this.button_C.Text = "C";
             this.button_C.UseVisualStyleBackColor = true;
+            this.button_C.Click += new System.EventHandler(this.Cancel_Click);
             // 
             // button_Result
             // 
